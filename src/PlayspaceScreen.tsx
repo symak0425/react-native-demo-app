@@ -63,6 +63,9 @@ const PlayspaceScreen = (props: PlayspaceScreenProps) => {
   const [slideIndex, setSlideIndex] = useState('');
   const [ctaLabel, setCtaLabel] = useState('');
   const [storyMetadata, setStoryMetadata] = useState('');
+  const [listenForEvent, setListenForEvent] = useState('');
+  const [listenForMoreEvents, setListenForMoreEvents] = useState('');
+  const [removeEvent, setRemoveEvent] = useState('');
   const [viewability, setViewability] = useState('N/A');
   const playspacePlayerRef = useRef<PlayspacePlayer>(null);
 
@@ -190,6 +193,26 @@ const PlayspaceScreen = (props: PlayspaceScreenProps) => {
       setStoryMetadata(JSON.stringify(result));
     }
   });
+
+  const onListenForEventTapped = () => playspacePlayerRef.current?.listenFor(listenForEvent, false, (error) => {
+    Alert.alert(ERROR_ALERT_TITLE, error);
+  });
+
+  const onListenForMoreEventsTapped = () => {
+    const events = listenForMoreEvents.split(", ");
+  
+    playspacePlayerRef.current?.listenForMore(events, (error) => {
+      Alert.alert(ERROR_ALERT_TITLE, error);
+    });
+  };
+
+  const onListenForAllEventsTapped = () => playspacePlayerRef.current?.listenForAllEvents();
+
+  const onRemoveEventTapped = () => playspacePlayerRef.current?.remove(removeEvent, (error) => {
+    Alert.alert(ERROR_ALERT_TITLE, error);
+  });
+
+  const onRemoveAllEventsTapped = () => playspacePlayerRef.current?.removeAllEvents();
 
   return (
     <SafeAreaView>
@@ -543,6 +566,82 @@ const PlayspaceScreen = (props: PlayspaceScreenProps) => {
             underlineColorAndroid="transparent"
             spellCheck
           />
+                    <View style={styles.rowContainer}>
+            <TouchableHighlight
+              onPress={onListenForEventTapped}
+              activeOpacity={0.8}
+              underlayColor={AppColors.background}
+              style={styles.rowButton}>
+              <View style={styles.appButton}>
+                <Text style={styles.appText}>Listen For</Text>
+              </View>
+            </TouchableHighlight>
+            <TextInput
+              style={styles.rowTextInput}
+              placeholder="Event"
+              onChangeText={event => {
+                setListenForEvent(event);
+              }}
+              underlineColorAndroid="transparent"
+              spellCheck
+            />
+          </View>
+          <View style={styles.rowContainer}>
+            <TouchableHighlight
+              onPress={onListenForMoreEventsTapped}
+              activeOpacity={0.8}
+              underlayColor={AppColors.background}
+              style={styles.rowButton}>
+              <View style={styles.appButton}>
+                <Text style={styles.appText}>Listen For More</Text>
+              </View>
+            </TouchableHighlight>
+            <TextInput
+              style={styles.rowTextInput}
+              placeholder="Events"
+              onChangeText={events => {
+                setListenForMoreEvents(events);
+              }}
+              underlineColorAndroid="transparent"
+              spellCheck
+            />
+          </View>
+          <TouchableHighlight
+            onPress={onListenForAllEventsTapped}
+            activeOpacity={0.8}
+            underlayColor={AppColors.background}>
+            <View style={styles.appButton}>
+              <Text style={styles.appText}>Listen For All Events</Text>
+            </View>
+          </TouchableHighlight>
+          <View style={styles.rowContainer}>
+            <TouchableHighlight
+              onPress={onRemoveEventTapped}
+              activeOpacity={0.8}
+              underlayColor={AppColors.background}
+              style={styles.rowButton}>
+              <View style={styles.appButton}>
+                <Text style={styles.appText}>Remove</Text>
+              </View>
+            </TouchableHighlight>
+            <TextInput
+              style={styles.rowTextInput}
+              placeholder="Event"
+              onChangeText={event => {
+                setRemoveEvent(event);
+              }}
+              underlineColorAndroid="transparent"
+              spellCheck
+            />
+          </View>
+          <TouchableHighlight
+            onPress={onRemoveAllEventsTapped}
+            activeOpacity={0.8}
+            underlayColor={AppColors.background}>
+            <View style={styles.appButton}>
+              <Text style={styles.appText}>Remove All Events</Text>
+            </View>
+          </TouchableHighlight>
         </View>
       </ScrollView>
     </SafeAreaView>
