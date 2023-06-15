@@ -24,7 +24,7 @@ allprojects {
     repositories {
         // Remote binaries - Connatix
         maven {
-            url "https://connatixsdk.jfrog.io/artifactory/connatixsdk"
+            url "https://public-packages.ops.connatix.com/repository/maven-releases/"
         }
     }
 }
