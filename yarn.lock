@@ -2658,10 +2658,10 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==
 
-connatix-player-sdk-react-native@^2.3.8:
-  version "2.3.8"
-  resolved "https://registry.yarnpkg.com/connatix-player-sdk-react-native/-/connatix-player-sdk-react-native-2.3.8.tgz#aa69e8401b7006164a71f8708469ebe607b52990"
-  integrity sha512-Ra6q0dEcSknBBwaUTTZFgdyrQhlvoxS3Ar2wJzcExvImV07Ufaaqcu1wMyRcURLNpGIN0zDKX0Z5uHovWu/b8A==
+connatix-player-sdk-react-native@^2.3.9:
+  version "2.3.9"
+  resolved "https://registry.yarnpkg.com/connatix-player-sdk-react-native/-/connatix-player-sdk-react-native-2.3.9.tgz#3c907f1385fe8d34118b7b0cafe59aed9af43010"
+  integrity sha512-w9D+9BVts3N/XtAWW30vaLxQedCOmmETgd5RMHcMCVK1Fl6ubjvpVahRVHMQRUA1rYuUIDWBmiBkJ05FkY/VvQ==
 
 connect@^3.6.5:
   version "3.7.0"
