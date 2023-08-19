@@ -5,6 +5,7 @@ const elementsDefaultConfigiOS = JSON.stringify(
     _appSettings: {
       appIsPaid: 0,
       appCategories: ['news'],
+      appPageURL: 'https://example.com/web-equivalent-article-page',
       domainURL: 'https://example.com',
       appPrivacyPolicy: 1,
       storeURL: 'https://appstore.com/example',
@@ -64,7 +65,7 @@ const playspaceDefaultConfigiOS = JSON.stringify(
     _appSettings: {
       appIsPaid: 0,
       appCategories: ['news'],
-      appPageURL: null,
+      appPageURL: 'https://example.com/web-equivalent-article-page',
       domainURL: 'https://example.com',
       appPrivacyPolicy: 1,
       storeURL: 'https://appstore.com/example',
@@ -89,7 +90,7 @@ const playspaceDefaultConfigiOS = JSON.stringify(
         tooltipBackgroundColor: null,
         logoPosition: null,
         logoURL: null,
-        orientation: 0,
+        orientation: 2,
       },
       playlist: null,
       disableAdvertising: null,
@@ -116,6 +117,7 @@ const elementsDefaultConfigAndroid = JSON.stringify(
     _appSettings: {
       appIsPaid: 0,
       appCategories: ['news'],
+      appPageURL: 'https://example.com/web-equivalent-article-page',
       domainURL: 'https://example.com',
       appPrivacyPolicy: 1,
       storeURL: 'https://appstore.com/example',
@@ -174,7 +176,7 @@ const playspaceDefaultConfigAndroid = JSON.stringify(
     _appSettings: {
       appIsPaid: 0,
       appCategories: ['news'],
-      appPageURL: null,
+      appPageURL: 'https://example.com/web-equivalent-article-page',
       domainURL: 'https://example.com',
       appPrivacyPolicy: 1,
       storeURL: 'https://appstore.com/example',
@@ -198,7 +200,7 @@ const playspaceDefaultConfigAndroid = JSON.stringify(
         tooltipBackgroundColor: null,
         logoPosition: null,
         logoURL: null,
-        orientation: 0,
+        orientation: 2,
       },
       playlist: null,
       disableAdvertising: null,
