@@ -1,12 +1,13 @@
 PODS:
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
-  - connatix-player-sdk-react-native (2.3.12):
-    - ConnatixPlayerSDKObjc (= 4.3.14)
+  - connatix-player-sdk-react-native (2.4.1):
+    - ConnatixPlayerSDKObjc (= 4.4.1)
     - React-Core
-  - ConnatixAppMeasurement (1.4.2)
-  - ConnatixPlayerSDKObjc (4.3.14):
-    - ConnatixAppMeasurement (= 1.4.2)
+  - ConnatixAppMeasurement (1.4.9)
+  - ConnatixPlayerSDKObjc (4.4.1):
+    - ConnatixAppMeasurement (= 1.4.9)
+    - GoogleAds-IMA-iOS-SDK (= 3.19.2)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.71.3)
   - FBReactNativeSpec (0.71.3):
@@ -79,6 +80,7 @@ PODS:
     - FlipperKit/FlipperKitNetworkPlugin
   - fmt (6.2.1)
   - glog (0.3.5)
+  - GoogleAds-IMA-iOS-SDK (3.19.2)
   - hermes-engine (0.71.3):
     - hermes-engine/Pre-built (= 0.71.3)
   - hermes-engine/Pre-built (0.71.3)
@@ -426,7 +428,7 @@ PODS:
   - RNScreens (3.20.0):
     - React-Core
     - React-RCTImage
-  - SocketRocket (0.6.0)
+  - SocketRocket (0.6.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -511,6 +513,7 @@ SPEC REPOS:
     - Flipper-RSocket
     - FlipperKit
     - fmt
+    - GoogleAds-IMA-iOS-SDK
     - libevent
     - OpenSSL-Universal
     - SocketRocket
@@ -597,9 +600,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
-  connatix-player-sdk-react-native: 992f2b95e4f7d9c62cfa543d7add988e0c152571
-  ConnatixAppMeasurement: f7a9b37eff19aa02b0c973fd9f71f1e4ce5875fa
-  ConnatixPlayerSDKObjc: b3166354129c38dac174b1b168a3a58fa1d348d1
+  connatix-player-sdk-react-native: 7023cdb90b52fb24cd95c873ccf621d2db2af23a
+  ConnatixAppMeasurement: 119ed330f26482ac953ff4c817cf75cd40be408a
+  ConnatixPlayerSDKObjc: c7c8992d660585242bd91981a7f0616fa6ba09dc
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   FBLazyVector: 60195509584153283780abdac5569feffb8f08cc
   FBReactNativeSpec: 9c191fb58d06dc05ab5559a5505fc32139e9e4a2
@@ -614,6 +617,7 @@ SPEC CHECKSUMS:
   FlipperKit: cbdee19bdd4e7f05472a66ce290f1b729ba3cb86
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
+  GoogleAds-IMA-iOS-SDK: 0e817c05ab26f1b9285c80f4a75e1350a916d50b
   hermes-engine: 38bfe887e456b33b697187570a08de33969f5db7
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
@@ -622,7 +626,7 @@ SPEC CHECKSUMS:
   RCTTypeSafety: 171394eebacf71e1cfad79dbfae7ee8fc16ca80a
   React: d7433ccb6a8c36e4cbed59a73c0700fc83c3e98a
   React-callinvoker: 15f165009bd22ae829b2b600e50bcc98076ce4b8
-  React-Codegen: b5910000eaf1e0c2f47d29be6f82f5f1264420d7
+  React-Codegen: 1380f5c2a07e252a14d28fadb49a4a0e218aa7d9
   React-Core: b6f2f78d580a90b83fd7b0d1c6911c799f6eac82
   React-CoreModules: e0cbc1a4f4f3f60e23c476fef7ab37be363ea8c1
   React-cxxreact: c87f3f124b2117d00d410b35f16c2257e25e50fa
@@ -647,10 +651,10 @@ SPEC CHECKSUMS:
   ReactCommon: 6f65ea5b7d84deb9e386f670dd11ce499ded7b40
   RNCAsyncStorage: 8616bd5a58af409453ea4e1b246521bb76578d60
   RNScreens: 218801c16a2782546d30bd2026bb625c0302d70f
-  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 5ed1699acbba8863755998a4245daa200ff3817b
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 28ae8d339aa9fc08fb13dfc4048e0977649a0578
+PODFILE CHECKSUM: 9aa2ba13ce5ef777adafba9d9c8cec2b89afec89
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.14.2

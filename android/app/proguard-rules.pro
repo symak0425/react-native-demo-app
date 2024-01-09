@@ -9,3 +9,9 @@
 
 # Add any project specific keep options here:
 -keep class com.cnx.connatixplayersdk.** { *; }
+
+-keep class com.google.obf.** { *; }
+-keep interface com.google.obf.** { *; }
+
+-keep class com.google.ads.interactivemedia.** { *; }
+-keep interface com.google.ads.interactivemedia.** { *; }

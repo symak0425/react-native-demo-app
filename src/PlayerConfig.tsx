@@ -34,6 +34,7 @@ const elementsDefaultConfigiOS = JSON.stringify(
         logoPosition: null,
         logoURL: null,
         orientation: null,
+        enableNewUI: false
       },
       playlist: null,
       disableAdvertising: null,
@@ -91,6 +92,7 @@ const playspaceDefaultConfigiOS = JSON.stringify(
         logoPosition: null,
         logoURL: null,
         orientation: 2,
+        enableNewUI: false
       },
       playlist: null,
       disableAdvertising: null,
@@ -145,6 +147,7 @@ const elementsDefaultConfigAndroid = JSON.stringify(
         logoPosition: null,
         logoURL: null,
         orientation: null,
+        enableNewUI: null
       },
       playlist: null,
       disableAdvertising: null,
@@ -201,6 +204,7 @@ const playspaceDefaultConfigAndroid = JSON.stringify(
         logoPosition: null,
         logoURL: null,
         orientation: 2,
+        enableNewUI: null
       },
       playlist: null,
       disableAdvertising: null,
