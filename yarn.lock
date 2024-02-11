@@ -2851,7 +2851,7 @@ __metadata:
     "@types/react": ^18.0.24
     "@types/react-test-renderer": ^18.0.0
     babel-jest: ^29.2.1
-    connatix-player-sdk-react-native: ^2.4.1
+    connatix-player-sdk-react-native: ^2.4.2
     eslint: ^8.19.0
     jest: ^29.2.1
     metro-react-native-babel-preset: 0.73.7
@@ -3783,13 +3783,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"connatix-player-sdk-react-native@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "connatix-player-sdk-react-native@npm:2.4.1"
+"connatix-player-sdk-react-native@npm:^2.4.2":
+  version: 2.4.2
+  resolution: "connatix-player-sdk-react-native@npm:2.4.2"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: a4e659d0319160f79d1b622726c4c6fbe12c1d45d1565c1a31a10ab53091663525285c8a97f1a916d2d0a1b71c9ccc54e8ca6dec419aa473a56b0d9de1ace4e6
+  checksum: 26fd2497fccf8d0aaecbccd8e086718c349efd5baa1086a2a2c857ed20f95a941d262bcab34a335cec82fb7b103a3b20badd60edbc06190abd39b69107004ea8
   languageName: node
   linkType: hard
 
