@@ -1,12 +1,12 @@
 PODS:
   - boost (1.76.0)
   - CocoaAsyncSocket (7.6.5)
-  - connatix-player-sdk-react-native (2.4.2):
-    - ConnatixPlayerSDKObjc (= 4.3.18)
+  - connatix-player-sdk-react-native (2.4.3):
+    - ConnatixPlayerSDKObjc (= 4.3.20)
     - React-Core
-  - ConnatixAppMeasurement (1.4.9)
-  - ConnatixPlayerSDKObjc (4.3.18):
-    - ConnatixAppMeasurement (= 1.4.9)
+  - ConnatixAppMeasurement (1.4.13)
+  - ConnatixPlayerSDKObjc (4.3.20):
+    - ConnatixAppMeasurement (= 1.4.13)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.71.3)
   - FBReactNativeSpec (0.71.3):
@@ -597,9 +597,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
-  connatix-player-sdk-react-native: 5dfdeba447d5567b1d80061f60cef59a18ae9185
-  ConnatixAppMeasurement: 119ed330f26482ac953ff4c817cf75cd40be408a
-  ConnatixPlayerSDKObjc: a354a84fbaca0d666841b150c26667b917a9532c
+  connatix-player-sdk-react-native: 2424a8e51fc6207c36e5c59a97f7471ccfe404fb
+  ConnatixAppMeasurement: 1e8a9737da99901a877297bf9007238b45e8671e
+  ConnatixPlayerSDKObjc: 50b831446eeed22d1bde07ed1cea840e803c6428
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   FBLazyVector: 60195509584153283780abdac5569feffb8f08cc
   FBReactNativeSpec: 9c191fb58d06dc05ab5559a5505fc32139e9e4a2
